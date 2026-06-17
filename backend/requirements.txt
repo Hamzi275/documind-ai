@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+groq
+python-dotenv
+chromadb
+sentence-transformers
+pypdf
+beautifulsoup4
+requests
+youtube-transcript-api
+python-multipart
