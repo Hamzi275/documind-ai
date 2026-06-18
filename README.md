@@ -2,7 +2,7 @@
 
 # 🧠 DocuMind AI
 
-### A multi-source RAG research assistant — chat with your PDFs, web pages, and YouTube videos in one place
+### A multi-source RAG research assistant chat with your PDFs, web pages, and YouTube videos in one place
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
@@ -19,9 +19,9 @@
 
 ## Overview
 
-**DocuMind AI** is a full-stack Retrieval-Augmented Generation (RAG) application that lets you build a personal knowledge base out of three completely different source types — **PDF documents**, **web pages**, and **YouTube videos** — and then chat with an LLM that retrieves relevant context across *all* of them at once and tells you exactly which source each part of its answer came from.
+**DocuMind AI** is a full-stack Retrieval-Augmented Generation (RAG) application that lets you build a personal knowledge base out of three completely different source types **PDF documents**, **web pages**, and **YouTube videos** and then chat with an LLM that retrieves relevant context across *all* of them at once and tells you exactly which source each part of its answer came from.
 
-Instead of wiring this together with a black-box RAG framework, the retrieval pipeline is built from first principles: text is chunked manually with sentence-boundary-aware splitting, embedded locally with `sentence-transformers`, stored in a persistent `ChromaDB` collection, and retrieved with a similarity query — all visible, all inspectable, no hidden magic. The goal was to actually understand and demonstrate how RAG works under the hood, not just call `.from_documents()`.
+Instead of wiring this together with a black-box RAG framework, the retrieval pipeline is built from first principles: text is chunked manually with sentence-boundary-aware splitting, embedded locally with `sentence-transformers`, stored in a persistent `ChromaDB` collection, and retrieved with a similarity query all visible, all inspectable, no hidden magic. The goal was to actually understand and demonstrate how RAG works under the hood, not just call `.from_documents()`.
 
 > 📌 **Status**: Fully functional locally (see screenshots below). Live hosting is in progress — instructions for self-hosting are included so you can run it yourself in the meantime.
 
