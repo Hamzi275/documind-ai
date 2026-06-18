@@ -61,22 +61,9 @@ The screenshots below are from local testing — one ingesting a **research pape
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    subgraph Ingestion
-        A[PDF Upload] --> D[Chunker]
-        B[Web URL] --> D
-        C[YouTube URL] --> D
-    end
-    D -->|sentence-transformers| E[(ChromaDB<br/>persistent vector store)]
-
-    subgraph "Chat Request"
-        F[User question] --> G[Embed question]
-        G --> E
-        E -->|top-k similar chunks| H[Groq Llama 3.3 70B]
-        H -->|SSE token stream + citations| I[React chat UI]
-    end
-```
+<div align="center">
+  <img src="4.png" alt="DocuMind AI architecture diagram" width="800" />
+</div>
 
 ---
 
